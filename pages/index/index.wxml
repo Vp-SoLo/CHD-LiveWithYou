@@ -1,0 +1,19 @@
+<!--pages/index/index.wxml-->
+<view class="indexContainer">
+  <swiper class="scrollPicture" indicator-dots indicator-color="red" autoplay>
+    <block wx:for="{{adPic}}" wx:key="index">
+    <swiper-item>
+      <image src="{{item.adImage}}" mode="aspectFill" class="adPicture"></image>
+    </swiper-item>
+    </block>
+  </swiper>
+  <view class="appTitle">
+    <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/应用.png" mode="apsectFit" class="titleImage"></image>
+    <text>功能分区</text>
+  </view>
+  <view class="section">
+    <block wx:for="{{activity}}" wx:key="id">
+      <x-activity activityItem="{{item}}" id="{{index}}" bindtap="_handleActivity" class="activityItem"/>
+    </block>  
+  </view>
+</view>

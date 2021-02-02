@@ -1,0 +1,7 @@
+<!--pages/send/send.wxml-->
+<view class="container">
+<form bindsubmit="_handleSend">
+  <textarea name="content" id="contentText" cols="10" rows="10" placeholder="100个字符以内" class="ta"></textarea>
+  <button type="primary" form-type="submit">发表</button>
+</form>
+</view>

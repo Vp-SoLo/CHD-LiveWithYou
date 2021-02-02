@@ -1,0 +1,15 @@
+/* pages/communication/communication.wxss */
+.post{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgb(24, 188, 243);
+  color: white;
+  border-radius: 50%;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 100rpx;
+  position: fixed;
+  top: 90%;
+  left: 85%;
+}

@@ -1,0 +1,19 @@
+/* pages/personalInfo/personalInfo.wxss */
+.container{
+  height: 100vh;
+  background-color:rgba(119, 136, 153, 0.322);
+  display: flex;
+  flex-direction: column;
+}
+.infoItem{
+  display: flex;
+  background-color: white;
+  height: 8vh;
+  margin-bottom: 3vh;
+}
+input{
+  margin: auto;
+}
+text{
+  margin: auto;
+}

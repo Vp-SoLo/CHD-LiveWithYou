@@ -1,0 +1,19 @@
+<!--components/x-post/x-post.wxml-->
+<view class="container">
+  <image src="{{postItem.userInfo.avatarUrl}}" mode="aspectFit" class="userImage"/>
+  <view class="right">
+    <view class="txt">
+      <view class="userName">{{postItem.userInfo.nickName}}</view>
+      <view class="content">{{postItem.content}}</view>
+    </view>
+    <view class="more" bindtap="_handleThumb" id="{{postItem._id}}">
+      <block wx:if="{{postItem.userThumb || localthumb}}">
+        <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/已点赞.png" mode="aspectFit" class="thumb"></image>
+      </block>
+      <block wx:if="{{!postItem.userThumb && !localthumb}}">
+        <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/未点赞.png" mode="aspectFit" class="thumb"></image>
+      </block>
+      <text>{{postItem.thumb}}人赞了</text>
+    </view>
+  </view>
+</view>

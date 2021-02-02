@@ -1,0 +1,51 @@
+{
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "1296db",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "/assets/images/首页.png",
+        "selectedIconPath": "/assets/images/首页.png"
+      },
+      {
+        "pagePath": "pages/communication/communication",
+        "text": "交际广场",
+        "iconPath": "/assets/images/消息.png",
+        "selectedIconPath": "/assets/images/消息.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+        "text": "我的",
+        "iconPath": "/assets/images/我的.png",
+        "selectedIconPath": "/assets/images/我的.png"
+      }
+    ]
+  },
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "CHD交流平台",
+    "backgroundColor": "#eeeeee",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  },
+  "pages": [
+    "pages/index/index",
+    "pages/personal/personal",
+    "pages/communication/communication",
+    "pages/kaoyan/kaoyan",
+    "pages/daily/daily",
+    "pages/studyalone/studyalone",
+    "pages/exercise/exercise",
+    "pages/competition/competition",
+    "pages/play/play",
+    "pages/personalInfo/personalInfo",
+    "pages/postItem/postItem",
+    "components/x-post/x-post",
+    "pages/send/send",
+    "pages/find/find"
+  ],
+  "sitemapLocation": "sitemap.json"
+}

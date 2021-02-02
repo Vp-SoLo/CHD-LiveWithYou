@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "x-post":"/components/x-post/x-post"
+  },
+  "enablePullDownRefresh": true
+}

@@ -1,0 +1,5 @@
+<view class="activity">
+  <image src="{{activityItem.activityImage}}" class="activityImage" mode="apsectFit"/>
+  <view>{{activityItem.activityName}}</view>
+</view>
+

@@ -1,0 +1,10 @@
+<!--pages/communication/communication.wxml-->
+<view class="page">
+  <view class="postItem">
+  <block wx:for="{{post}}" wx:key="index">
+    <x-post postItem="{{item}}" id="{{index}}" bind:thumb="_handleTryThumb"/>
+  </block>
+  </view>
+  <view class="post" bindtap="_handleToSend">+</view>
+</view>
+

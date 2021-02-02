@@ -1,0 +1,39 @@
+<!--pages/personal/personal.wxml-->
+<view wx:if="{{!openid}}" class="login">
+  <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/登录图.jpg" mode="aspectFill" class="loginImage"/>
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="_handleOnGotUserInfo" class="loginBtn" type="primary">使用微信授权登录</button>
+</view>
+<view class="loginedPage" wx:if="{{openid}}">
+  <view class="user">
+    <view class="userImage">
+      <image src="{{userInfo.avatarUrl}}" mode="aspectFit"/>
+    </view>
+    <view class="nickName">{{userInfo.nickName}}</view>
+  </view>
+  <view class="personalInfo" bindtap="_handleToInfo">
+    <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/个人信息.png" mode="aspectFit"></image>
+    <text>个人信息</text>
+  </view>
+  <view class="myTags">
+    <view class="tagsTitle">
+      <image mode="aspectFit" src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/标签.png"></image>
+      <text>我的标签</text>
+    </view>
+    <view class="tags">
+      <view class="chossen">
+        <block wx:for="{{choosenTags}}" wx:key="index">
+          <text class="tagItems iconfont iconbiaoqian" bindtap="_handleDeleteTags" id="{{index}}">{{item}}</text>
+        </block>
+      </view>
+      <view class="unchossen">
+        <block wx:for="{{showTags}}" wx:key="index">
+          <text class="tagItems iconfont iconbiaoqian" bindtap="_handleAddTags" id="{{index}}">{{item}}</text>
+        </block>
+      </view>
+    </view>
+    <view class="btn">
+      <button bindtap="_handleSubmitTags" class="sub" type="primary">提交标签</button>
+      <button bindtap="_handleShowAnother" class="showAnother">刷新候选标签</button>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,10 @@
+/* pages/send/send.wxss */
+.container{
+  display: flex;
+}
+
+.ta{
+  border: lightgray solid;
+  width: 750rpx;
+  margin-bottom: 3vh;
+}

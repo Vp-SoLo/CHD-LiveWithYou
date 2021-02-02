@@ -1,0 +1,14 @@
+<!--components/x-segmentPage/x-segmentPage.wxml-->
+<view class="segmentPage">
+  <x-segmentBar segmentItems="{{sItem}}" bind:selectChange="_handleChange" id="x-sp-sb"></x-segmentBar>
+  <swiper circular class="sw" current="{{ci}}" bindchange="_handlePagesChange">
+  <block wx:for="{{segmentItems}}">
+    <swiper-item>
+      <view>
+        page{{index}}
+      </view>
+    </swiper-item>
+  </block>
+  <!-- <slot></slot> -->
+  </swiper>
+</view>

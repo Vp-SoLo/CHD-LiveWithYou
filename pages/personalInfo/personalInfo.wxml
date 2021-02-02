@@ -1,0 +1,22 @@
+<!--pages/personalInfo/personalInfo.wxml-->
+<view class="container">
+  <form class="infoForm" bindsubmit="_handleSubmitInfo">
+    <view class="infoItem">
+      <text>真实姓名</text>
+      <input type="text" placeholder="{{realName ? realName:'请输入'}}" name="realName"/>
+    </view>
+    <view class="infoItem">
+      <text>学号</text>
+      <input type="text" placeholder="{{studentID ? studentID:'请输入'}}" name="studentID"/>
+    </view>
+    <view class="infoItem">
+      <text>学院</text>
+      <input type="text" placeholder="{{academy ? academy:'请输入'}}" name="academy"/>
+    </view>
+    <view class="infoItem">
+      <text>专业</text>
+      <input type="text" placeholder="{{major ? major:'请输入'}}" name="major"/>
+    </view>
+    <button form-type="submit" type="primary">提交个人信息</button>
+  </form>
+</view>

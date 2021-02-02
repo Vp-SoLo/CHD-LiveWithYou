@@ -1,0 +1,31 @@
+/* components/x-post/x-post.wxss */
+.container{
+  height: 23vh;
+  /* background-color: orange; */
+  display: flex;
+  border-bottom: lightgray 5rpx solid;
+}
+.userImage{
+  height: 50%;
+  flex:1;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+.userName{
+  font-weight: bold;
+  color: rgb(46, 46, 156);
+}
+.more{
+  display: inline;
+  margin-left: auto;
+  margin-right: 0;
+  margin-top: auto;
+  margin-bottom: 0;
+}
+.thumb{
+  width: 40rpx;
+  height: 40rpx;
+}

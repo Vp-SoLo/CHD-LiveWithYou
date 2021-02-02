@@ -1,0 +1,11 @@
+/* components/x-segmentPage/x-segmentPage.wxss */
+.segmentPage{
+  height: 100vh;
+  background-color: darkblue;
+  display: flex;
+  flex-direction: column;
+}
+.sw{
+  background-color: seagreen;
+  flex: 1;
+}

@@ -1,0 +1,39 @@
+/* pages/index/index.wxss */
+.indexContainer{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  /* background: linear-gradient(lightblue lightgray); */
+}
+.scrollPicture{
+  height: 35vh;
+  margin-bottom: 0px;
+}
+.adPicture{
+  width: 100%;
+  height: 100%;
+}
+.appTitle{
+  display: flex;
+  height: 25px;
+  background-color: lightgray;
+}
+.titleImage{
+  height: 100%;
+  width: 25px;
+}
+.appTitle text{
+  font-size: small;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+.section{
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+
+
+

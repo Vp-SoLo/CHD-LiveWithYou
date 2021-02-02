@@ -1,0 +1,8 @@
+<view class="segment">
+<block wx:for="{{segmentItems}}" wx:key="index">
+   <view class="segmentItem {{index==currentIndex ? 'active':''}}" id="{{index}}" bindtap="_handleTap">
+   <text class="mainTitle">{{item.title}}</text>
+   <text class="subTitle">{{item.subTitle}}</text>
+  </view>
+</block>
+</view>

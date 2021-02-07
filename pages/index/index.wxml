@@ -16,4 +16,5 @@
       <x-activity activityItem="{{item}}" id="{{index}}" bindtap="_handleActivity" class="activityItem"/>
     </block>  
   </view>
+  <button type="primary" bindtap="_handleTest" class="test">测试用清除缓存按钮</button>
 </view>

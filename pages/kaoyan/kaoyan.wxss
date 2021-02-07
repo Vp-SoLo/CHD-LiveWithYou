@@ -1,1 +1,63 @@
 /* pages/kaoyan/kaoyan.wxss */
+.infoCollection image{
+  width: 750rpx;
+  height: 45vh;
+}
+.infoCollection{
+  height: 100vh;
+  background-color: rgb(197, 204, 207);
+  display: flex;
+  flex-direction: column;
+}
+.infoItem{
+  display: flex;
+  background-color: white;
+  height: 8vh;
+  margin-bottom: 3vh;
+}
+input{
+  margin: auto;
+}
+text{
+  margin: auto;
+}
+.btn{
+  display: flex;
+}
+.infoItems{
+  display: flex;
+  background-color: white;
+  height: 15vh;
+  margin-bottom: 3vh;
+}
+textarea{
+  height: 15vh;
+}
+.container{
+  height: 100vh;
+  width: 750rpx;
+}
+.title{
+  display: flex;
+  height: 10vh;
+  background-color: rgb(196, 203, 207);
+}
+.title image{
+  height: 90%;
+  width: 135rpx;
+}
+.change{
+  width: 100rpx;
+  height: 100rpx;
+  background-color: rgb(24, 188, 243);
+  color: white;
+  border-radius: 50%;
+  font-size: xx-large;
+  font-weight: bolder;
+  text-align: center;
+  line-height: 100rpx;
+  position: fixed;
+  top: 90%;
+  left: 85%;
+}
+

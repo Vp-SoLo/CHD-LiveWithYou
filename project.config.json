@@ -90,6 +90,18 @@
           "pathName": "pages/send/send",
           "query": "",
           "scene": null
+        },
+        {
+          "name": "考研",
+          "pathName": "pages/kaoyan/kaoyan",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "考研信息修改",
+          "pathName": "pages/changeKaoyan/changeKaoyan",
+          "query": "",
+          "scene": null
         }
       ]
     }

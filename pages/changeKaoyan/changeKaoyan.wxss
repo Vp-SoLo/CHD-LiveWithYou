@@ -1,0 +1,29 @@
+/* pages/changeKaoyan/changeKaoyan.wxss */
+.container{
+  height: 100vh;
+  width: 750rpx;
+  background-color: lightgray;
+  display: flex;
+  flex-direction: column;
+}
+.item{
+  background-color: white;
+  margin-bottom: 50rpx;
+  margin-top: 50rpx;
+  display: flex;
+  height: 8vh;
+}
+.sub{
+  font-weight: bold;
+}
+input{
+  margin-left: 15rpx;
+}
+.item_ta{
+  background-color: white;
+  margin-bottom: 50rpx;
+  display: flex;
+}
+textarea{
+  margin-left: 15rpx;
+}

@@ -1,3 +1,6 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "x-kaoyan":"/components/x-kaoyan/x-kaoyan"
+  },
+  "enablePullDownRefresh": true
 }

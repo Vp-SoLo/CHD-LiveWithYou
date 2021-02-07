@@ -1,0 +1,22 @@
+<!--pages/changeKaoyan/changeKaoyan.wxml-->
+<view class="container">
+  <form bindsubmit="_handleChange">
+    <view class="item">
+      <text class="sub">真实姓名</text>
+      <input type="text" placeholder="{{realName?realName:'请输入'}}" name="realName"/>
+    </view>
+    <view class="item">
+      <text class="sub">目标院校</text>
+      <input type="text" placeholder="{{targetSchool?targetSchool:'请输入'}}" name="targetSchool"/>
+    </view>
+    <view class="item">
+      <text class="sub">目标专业</text>
+      <input type="text" placeholder="{{targetMajor?targetMajor:'请输入'}}" name="targetMajor"/>
+    </view>
+    <view class="item_ta">
+      <text class="sub">自我介绍</text>
+      <textarea name="intro" id="intro" cols="10" rows="5" placeholder="{{intro?intro+'（50个字符以内）':'请输入，50个字符以内，建议填写联系方式'}}"></textarea>
+    </view>
+    <button form-type="submit" type="primary">提交信息</button>
+  </form>
+</view>

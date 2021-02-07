@@ -45,7 +45,7 @@
     "pages/postItem/postItem",
     "components/x-post/x-post",
     "pages/send/send",
-    "pages/find/find"
+    "pages/changeKaoyan/changeKaoyan"
   ],
   "sitemapLocation": "sitemap.json"
 }

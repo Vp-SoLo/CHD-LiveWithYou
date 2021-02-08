@@ -20,6 +20,25 @@ Page({
       })
     }
   },
+  _handleTest:function(){
+    wx.showModal({
+      title: '提示',
+      content: '即将删除所有缓存信息！是否删除？',
+      success (res) {
+        if (res.confirm) {
+          wx.clearStorage()
+          wx.showToast({
+            title: '清除缓存成功！',
+          })
+          this.onLoad()
+        } else if (res.cancel) {
+          wx.showToast({
+            title: '取消操作！',
+          })
+        }
+      }
+    })
+  },
   /**
    * 页面的初始数据
    */

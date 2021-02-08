@@ -92,12 +92,18 @@
           "scene": null
         },
         {
+<<<<<<< HEAD
           "name": "竞赛",
           "pathName": "pages/competition/competition",
+=======
+          "name": "考研",
+          "pathName": "pages/kaoyan/kaoyan",
+>>>>>>> 8c985cf822dbcf097208f20f3cb2dec7adfcb490
           "query": "",
           "scene": null
         },
         {
+<<<<<<< HEAD
           "name": "休闲娱乐",
           "pathName": "pages/play/play",
           "query": "",
@@ -107,6 +113,12 @@
           "name": "吃",
           "pathName": "pages/play/eat/eat",
           "scene": null
+=======
+          "name": "考研信息修改",
+          "pathName": "pages/changeKaoyan/changeKaoyan",
+          "query": "",
+          "scene": null
+>>>>>>> 8c985cf822dbcf097208f20f3cb2dec7adfcb490
         }
       ]
     }

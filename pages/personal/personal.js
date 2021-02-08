@@ -136,9 +136,7 @@ Page({
       // console.log(res.data[0].tagIndex)
       this.setData({
         choosenIndex:res.data[0].tagIndex,
-        studentInfo:res.data[0]
       })
-      wx.setStorage('student', this.data.studentInfo)
       for(let j=0;j<this.data.choosenIndex.length;++j){
         this.data.choosenTags.push(this.data.tags[this.data.choosenIndex[j]])
       }

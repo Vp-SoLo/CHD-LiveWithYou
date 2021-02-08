@@ -45,11 +45,15 @@
     "pages/postItem/postItem",
     "components/x-post/x-post",
     "pages/send/send",
+<<<<<<< HEAD
     "pages/find/find",
     "pages/play/eat/eat",
     "pages/play/drink/drink",
     "pages/play/games/games",
     "pages/play/fun/fun"
+=======
+    "pages/changeKaoyan/changeKaoyan"
+>>>>>>> 8c985cf822dbcf097208f20f3cb2dec7adfcb490
   ],
   "sitemapLocation": "sitemap.json"
 }

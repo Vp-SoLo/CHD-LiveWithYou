@@ -1,0 +1,16 @@
+<!--components/x-kaoyan/x-kaoyan.wxml-->
+<view class="container">
+  <image src="{{kaoyan.userInfo.avatarUrl}}" mode="aspectFit" class="userImage"/>
+  <view class="right">
+    <view class="txt">
+      <view class="realName">{{kaoyan.realName}}</view>
+      <view class="target">
+        <text class="pre">目标学校：<text class="targetSchool">{{kaoyan.targetSchool}}</text></text>
+        <text class="pre">目标专业：<text class="targetText">{{kaoyan.targetMajor}}</text></text>
+      </view>
+      <view class="intro">
+        <text class="pre">自我介绍：<text class="introText">{{kaoyan.intro}}</text></text>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,2 +1,38 @@
 <!--pages/kaoyan/kaoyan.wxml-->
-<text>pages/kaoyan/kaoyan.wxml</text>
+<block wx:if="{{!isLoged}}">
+<view class="infoCollection">
+  <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/考研.jpg" mode="aspectFit"></image>
+<form bindsubmit="_handleSubmit">
+  <view class="infoItem">
+    <text>目标院校</text>
+    <input type="text" placeholder="请输入" name="targetSchool"/>
+  </view>
+  <view class="infoItem">
+    <text>专业名称</text>
+    <input type="text" placeholder="请输入" name="targetMajor"/>
+  </view>
+  <view class="infoItems">
+    <text>个人简介</text>
+    <textarea name="intro" id="intro" cols="10" rows="5" placeholder="50个字符以内，认真的填写有助于发现志同道合之人哦，建议填写联系方式"></textarea>
+  </view>
+  <view class="btn">
+    <button type="primary" form-type="submit">完善考研信息</button>
+    <button bindtap="_handleBack">返回主页</button>
+  </view>
+</form>
+</view>
+</block>
+<block wx:if="{{isLoged}}">
+<view class="container">
+  <view class="title">
+    <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/朋友.png" mode="aspectFit"></image>
+    <text>推荐研友（若列表为空，可下拉刷新）</text>
+  </view>
+  <block wx:for="{{well}}">
+    <x-kaoyan kaoyan="{{item}}"></x-kaoyan>
+  </block>
+  <view class="change" bindtap="_handleToChange">
+    <text>改</text>
+  </view>
+</view>
+</block>

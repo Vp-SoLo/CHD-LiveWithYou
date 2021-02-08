@@ -1,0 +1,47 @@
+/* components/x-kaoyan/x-kaoyan.wxss */
+.container{
+  height: 23vh;
+  /* background-color: orange; */
+  display: flex;
+  border-bottom: lightgray 5rpx solid;
+}
+.userImage{
+  height: 50%;
+  flex:1;
+}
+.right{
+  display: flex;
+  flex-direction: column;
+  flex: 4;
+}
+.realName{
+  font-weight: bold;
+  color: rgb(46, 46, 156);
+}
+.target{
+  display: flex;
+  flex-direction: column;
+}
+.target text{
+  margin-left: 0;
+}
+.intro{
+  display: flex;
+}
+.intro text{
+  margin-left: 0;
+}
+.pre{
+  color: rgb(121, 119, 119);
+}
+.targetSchool{
+  color: rgb(52, 52, 134);
+  font-weight: bold;
+}
+.targetText{
+  color: rgb(3, 3, 26);
+  font-weight: bold;
+}
+.introText{
+  color: rgb(48, 115, 138);
+}

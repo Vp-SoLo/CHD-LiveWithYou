@@ -1,4 +1,9 @@
 /* pages/index/index.wxss */
+page {
+  background-image: url(https://wx3.sinaimg.cn/mw690/006cV2kkgy1gcz9iabu19j30yi22oabf.jpg);
+  background-size: cover;
+}
+
 .indexContainer{
   height: 100vh;
   display: flex;
@@ -33,6 +38,8 @@
   flex-wrap: wrap;
   height: auto;
 }
+
+
 
 
 

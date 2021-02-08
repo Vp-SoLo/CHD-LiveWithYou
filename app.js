@@ -7,6 +7,7 @@ App({
     })
   },
   globalData: {
-    userInfo: null
+    userInfo: null,
+    cate_id:0
   }
 })

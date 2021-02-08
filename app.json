@@ -45,7 +45,11 @@
     "pages/postItem/postItem",
     "components/x-post/x-post",
     "pages/send/send",
-    "pages/find/find"
+    "pages/find/find",
+    "pages/play/eat/eat",
+    "pages/play/drink/drink",
+    "pages/play/games/games",
+    "pages/play/fun/fun"
   ],
   "sitemapLocation": "sitemap.json"
 }

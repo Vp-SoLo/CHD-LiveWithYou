@@ -1,0 +1,118 @@
+/* pages/play/eat/eat.wxss */
+page {
+  background-image: url(https://wx3.sinaimg.cn/mw690/006cV2kkgy1gcz9iabu19j30yi22oabf.jpg);
+  background-size: cover;
+  box-sizing: border-box;
+}
+
+.Tab {
+  width: 100%;
+  background: #fff;
+  height: 80rpx;
+  line-height: 80rpx;
+  position: fixed;
+  top: 0;
+  z-index: 9999;
+  font-size: 32rpx;
+  white-space: nowrap;
+  color: #888;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+ 
+/* 箭头 */
+.tabImgL, .tabImgR {
+  width: 8%;
+  text-align: center;
+  display: inline-block;
+}
+.tabImgL{
+  text-align: left;
+}
+.tabImgR{
+  text-align: right;
+}
+.tabImgL {
+  position: fixed;
+  top: 10rpx;
+  left: 0;
+}
+ 
+.tabImgR {
+  position: fixed;
+  top: 10rpx;
+  right: 0;
+}
+ 
+.tabImgL image, .tabImgR image {
+  width: 80%;
+}
+ 
+/* tab栏切换样式 */
+.tab-h {
+  width: 100%;
+  margin:  auto;
+  position: fixed;
+  height: 80rpx;
+  line-height: 80rpx;
+  top: 0;
+  left: 8%;
+}
+ 
+.tab-item {
+ width: 160rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  border-radius: 30rpx;
+  text-align: center;
+  position: relative;
+  padding: 0 10rpx;
+  display: inline-block;
+}
+ 
+.tab-item.active {
+  width: 160rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  background: #ef7421;
+  color: #fff;
+  border-radius: 30rpx;
+  text-align: center;
+  position: relative;
+  padding: 0 10rpx;
+}
+
+.box{
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  margin-top:10px;
+  height:100vh;
+  background-image: url(https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2744152886,172983570&fm=26&gp=0.jpg);
+}
+
+.headImage{
+  width: 100%;
+  height:90px;
+}
+
+.items{
+  border:5px solid rebeccapurple;
+  height:100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.image_2{
+  height:100%;
+  width:60%;
+}
+
+.describe{
+  word-wrap: normal;
+  font-weight: bolder;
+}

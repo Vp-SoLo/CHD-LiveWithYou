@@ -1,0 +1,110 @@
+<!--pages/play/eat/eat.wxml-->
+<view>
+  <!-- tab栏 -->
+  <view class='Tab'>
+    <view class='tabImgL' bindtap='lefttab'>
+      <image mode="widthFix" src='{{zuosrc}}'></image>
+    </view>
+    <scroll-view scroll-x="true" class="tab-h" scroll-left="{{scrollLeft}}">
+      <view class="tab-item {{currentTab==0?'active':''}}" data-current="0" bindtap="swichNav">校园美食</view>
+      <view class="tab-item {{currentTab==1?'active':''}}" data-current="1" bindtap="swichNav">东门美食</view>
+      <view class="tab-item {{currentTab==2?'active':''}}" data-current="2" bindtap="swichNav">西安特色</view>
+      <!-- <view class="tab-item {{currentTab==3?'active':''}}" data-current="3" bindtap="swichNav">模块四</view>
+   <view class="tab-item {{currentTab==4?'active':''}}" data-current="4" bindtap="swichNav">模块五</view>
+   <view class="tab-item {{currentTab==5?'active':''}}" data-current="5" bindtap="swichNav">模块六</view> -->
+    </scroll-view>
+    <view class='tabImgR' bindtap='righttab'>
+      <image mode="widthFix" src='{{yousrc}}'></image>
+    </view>
+  </view>
+  <!-- 内容 -->
+  <view class="tab-content" current="{{currentTab}}" duration="100" bindchange="switchTab"
+    style="height:{{winHeight}}rpx">
+    <!-- 校园美食 -->
+    <view wx:if="{{content==0}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class="box">
+          <image
+            src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/play/CHD.jpg" />
+        </view>
+      </scroll-view>
+      <view class="container">
+        <view class="breakfast">   <!--早餐-->
+          <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/play/早餐.jpg" class="headImage"/>
+          
+        </view>
+
+        <view class="breakfast">   <!--午餐-->
+          <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/play/午餐.jpg" class="headImage"/>
+          
+        </view>
+
+        <view class="breakfast">   <!--晚餐-->
+          <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/play/晚餐.jpg" class="headImage"/>
+          
+        </view>
+
+        
+      </view>
+    </view>
+
+
+    <!-- 栏目-2 -->
+    <view wx:if="{{content==1}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class="box">
+          <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/play/CHD2.jpg"></image>
+        </view>
+      </scroll-view>
+      <view class="container_2">
+        <!-- <view class="items">
+          <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/images/2021.1.25-ad1.jpg" class="image_2"/>
+          <text class="describe" space>长安大学
+            榜样的力量
+            2020届长大之星
+          </text>
+        </view> -->
+        <block wx:for="{{items}}" wx:key='id'>
+          <view class="items">
+          <image src="{{item.image}}" class="image_2"/>
+          <text class="describe" space>{{item.des}}</text>
+        </view>
+        </block>
+      </view>
+    </view>
+
+
+    <!-- 栏目-3 -->
+    <view wx:if="{{content==2}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class="box">
+          <image src="cloud://chd-community-1gtwr7tfcd28004c.6368-chd-community-1gtwr7tfcd28004c-1304805216/assets/play/CHD3.jpg"></image>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 栏目-4 -->
+    <view wx:if="{{content==3}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class="box">
+          <image src="https://wx1.sinaimg.cn/large/008cmE87gy1gm1auvagqgg30dw0b04cb.gif"></image>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 栏目-5 -->
+    <view wx:if="{{content==4}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class="box">
+          <image src="https://wx1.sinaimg.cn/large/008cmE87gy1gm1auux1kwg30dw0b07s0.gif"></image>
+        </view>
+      </scroll-view>
+    </view>
+    <!-- 栏目-6 -->
+    <view wx:if="{{content==5}}">
+      <scroll-view scroll-y="true" class="scoll-h">
+        <view class="box">
+          <image src="https://wx1.sinaimg.cn/large/008cmE87gy1gm1auumnkrg30dw0b0h5o.gif"></image>
+        </view>
+      </scroll-view>
+    </view>
+  </view>
+</view>

@@ -41,7 +41,7 @@
   "libVersion": "2.14.0",
   "appid": "wx8c0023f69ec99645",
   "projectname": "CHD%E4%BA%A4%E6%B5%81%E5%A4%A9%E5%9C%B0",
-  "cloudfunctionTemplateRoot": "",
+  "cloudfunctionTemplateRoot": "cloudfunctionTemplate",
   "watchOptions": {
     "ignore": []
   },
@@ -89,6 +89,23 @@
           "name": "发帖",
           "pathName": "pages/send/send",
           "query": "",
+          "scene": null
+        },
+        {
+          "name": "竞赛",
+          "pathName": "pages/competition/competition",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "休闲娱乐",
+          "pathName": "pages/play/play",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "吃",
+          "pathName": "pages/play/eat/eat",
           "scene": null
         }
       ]

@@ -1,2 +1,50 @@
 <!--pages/play/play.wxml-->
-<text>pages/play/play.wxml</text>
+<swiper class="lb" indicator-dots="true" indicator-color="white" indicator-active-color="red" autoplay interval="2000"
+  circular>
+  <block wx:for="{{entertainment}}" wx:key='id'>
+      <swiper-item>
+        <image src="{{item.image}}" class="imageLb"></image>
+      </swiper-item>
+  </block>
+</swiper>
+
+<view class="border">
+  <text class="fun">千年古都，常来长安！</text>
+</view>
+
+<view class="box">
+  <view class="boxitem" wx:key='index' wx:for="{{kinds}}" bindtap="tofunction" data-url="{{item.url}}">
+    <navigator url="{{item.url}}">
+    <view class="boxitem_top">
+        <image src="{{item.icon}}" bindtap="_goto"></image>
+    </view>
+    <view class="boxitem_bottom">
+      <text>{{item.name}}</text>
+    </view>
+  </navigator>
+  </view>
+</view>
+
+<view class="wrapper">
+ <view class="box_1"></view>
+ <view class="box_1"></view>
+ <view class="box_1"></view>
+ <view class="box_1"></view>
+ <view class="box_1"></view>
+ <view class="box_1"></view>
+</view>
+
+
+<!-- <view class="box_1">
+  <view class="boxitem_1" wx:key='index' wx:for="{{kinds}}" bindtap="tofunction" data-url="{{item.url}}">
+    <navigator url="{{item.url}}">
+    <view class="boxitem_top_1">
+        <image src="{{item.icon}}" bindtap="_goto"></image>
+    </view>
+    <view class="boxitem_bottom_1">
+      <text>{{item.name}}</text>
+    </view>
+  </navigator>
+  </view>
+</view> -->
+

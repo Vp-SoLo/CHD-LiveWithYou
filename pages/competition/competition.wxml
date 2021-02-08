@@ -1,2 +1,27 @@
 <!--pages/competition/competition.wxml-->
-<text>pages/competition/competition.wxml</text>
+<swiper class="lb" indicator-dots="true" indicator-color="white" indicator-active-color="red" autoplay interval="2000"
+  circular>
+  <block wx:for="{{competitionItem}}" wx:key='id'>
+    <navigator url="{{item.url}}">
+      <swiper-item>
+        <image src="{{item.image}}" class="imageLb"></image>
+      </swiper-item>
+    </navigator>
+  </block>
+</swiper>
+
+<view class="border">
+  <text class="fun">人生如弈，竞赛先行！</text>
+</view>
+
+<view class="box">
+ <view class="boxitem" wx:key='index' wx:for="{{kinds}}" bindtap="tofunction" data-url="{{item.url}}">
+  <view class="boxitem_top">
+   <image src="{{item.icon}}"></image>
+  </view>
+  <view class="boxitem_bottom">
+   <text>{{item.name}}</text>
+  </view>
+ </view>
+</view>
+

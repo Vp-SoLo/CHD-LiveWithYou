@@ -83,11 +83,11 @@
   display:flex;
   flex-wrap: wrap;
   /* background-color: orange; */
-  height: 50%;
+  height: 70%;
 }
 .chossen{
   /* background-color: rebeccapurple; */
-  height: 50%;
+  height: 60%;
   border-bottom: 10rpx gray solid;
   border-top: 10rpx gray solid;
 }
@@ -95,7 +95,7 @@
   border-radius: 15%;
   font-weight: bold;
   font-size: large;
-  margin: 5rpx 5rpx;
+  margin: 10rpx 5rpx;
   height: 40rpx;
 }
 .btn{
